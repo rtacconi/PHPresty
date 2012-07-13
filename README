@@ -1,0 +1,8 @@
+PHPResty is a class which wraps cURL to create a simple REST client. This is an example:
+
+$rest = new PHPResty('https://www.google.com');
+$data = json_encode(array(
+'firstName'=> 'John',
+'lastName'=> 'Doe'
+));
+print_r($rest->post($data));
