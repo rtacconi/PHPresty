@@ -5,7 +5,7 @@ PHPResty is a class which wraps cURL to create a simple REST client.
 
 This is an example:
 
-```
+```php
 require_once('PHPResty.php');
 $rest = new PHPResty('https://www.google.com');
 $data = json_encode(array(
@@ -33,6 +33,6 @@ Array
 
     [code] => 405
 )
-```
+``` 
 
 You get an array whit response (the data sent back) and the status code, in this case status code is 405
